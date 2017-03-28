@@ -1,0 +1,20 @@
+{
+  "cloudshell_server_address" : "192.168.2.108",
+  "cloudshell_port": 8029,
+  "cloudshell_snq_port": 9000,
+  "cloudshell_username" : "admin",
+  "cloudshell_password" : "admin",
+  "cloudshell_domain" : "Global",
+
+  "cloudshell_execution_server_name" : "PythonSample1",
+  "cloudshell_execution_server_description" : "Robot CES in Python",
+  "cloudshell_execution_server_type" : "Robot",
+  "cloudshell_execution_server_capacity" : 5,
+
+  "log_directory": "/var/log",
+  "log_level": "DEBUG",
+  "log_filename": "<EXECUTION_SERVER_NAME>.log"
+
+
+
+}

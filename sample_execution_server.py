@@ -52,7 +52,7 @@ jsonexample = '''Example config.json:
 
   "cloudshell_domain" : "Global",
 
-  "cloudshell_execution_server_name" : "MyCES1",
+  "cloudshell_execution_server_name" : "PythonSample1",
   "cloudshell_execution_server_description" : "CES in Python",
   "cloudshell_execution_server_type" : "Python",
   "cloudshell_execution_server_capacity" : 5,
