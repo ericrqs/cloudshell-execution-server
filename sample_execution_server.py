@@ -9,6 +9,8 @@ import re
 import traceback
 from logging.handlers import RotatingFileHandler
 
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+
 from cloudshell.custom_execution_server.custom_execution_server import CustomExecutionServer, CustomExecutionServerCommandHandler, PassedCommandResult, \
     FailedCommandResult, ErrorCommandResult, StoppedCommandResult
 
