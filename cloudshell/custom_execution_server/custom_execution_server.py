@@ -220,7 +220,7 @@ class CustomExecutionServer:
         :param cloudshell_domain: str
 
         :param auto_register: bool : Automatically register this execution server in CloudShell in the constructor, ignoring 'already registered' error
-        :param auto_start: bool : Automatically start the server threads in the constructor. Consider setting to False and using the cloudshell.custom_execution_server.daemon module.
+        :param auto_start: bool : Automatically start the server threads in the constructor. Consider setting to False and using the cloudshell.custom_execution_server.daemon module to control starting and stopping.
         """
         self._cloudshell_host = cloudshell_host
         self._cloudshell_port = cloudshell_port
@@ -292,6 +292,10 @@ class CustomExecutionServer:
                       }))
 
     def start(self):
+        """
+        Starts processing execution commands 
+        :return: 
+        """
         self._threads = []
         self._running = True
         th = threading.Thread(target=self._status_update_thread)
@@ -304,6 +308,10 @@ class CustomExecutionServer:
         self._threads.append(th)
 
     def stop(self):
+        """
+        Stops the server. May take up to 2 minutes to cleanly close. It can be restarted.
+        :return: 
+        """
         self._running = False
         for th in self._threads:
             th.join()

@@ -7,6 +7,7 @@ import os
 import logging
 import re
 import traceback
+import platform
 from logging.handlers import RotatingFileHandler
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)))
@@ -17,7 +18,7 @@ from cloudshell.custom_execution_server.custom_execution_server import CustomExe
 from cloudshell.custom_execution_server.daemon import become_daemon_and_wait
 from cloudshell.custom_execution_server.process_manager import ProcessRunner
 
-if sys.platform.system() == 'Windows':
+if platform.system() == 'Windows':
     default_log_dir = '.'
 else:
     default_log_dir = '/var/log'

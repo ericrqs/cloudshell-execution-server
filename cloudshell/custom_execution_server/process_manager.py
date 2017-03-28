@@ -15,7 +15,7 @@ def string23(b):
     return b or ''
 
 
-class ProcessRunner():
+class ProcessRunner:
     def __init__(self, logger):
         self._logger = logger
         self._current_processes = {}
