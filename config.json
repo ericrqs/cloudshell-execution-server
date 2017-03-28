@@ -9,7 +9,7 @@
   "cloudshell_execution_server_name" : "PythonSample1",
   "cloudshell_execution_server_description" : "Robot CES in Python",
   "cloudshell_execution_server_type" : "Robot",
-  "cloudshell_execution_server_capacity" : 5,
+  "cloudshell_execution_server_capacity" : 6,
 
   "log_directory": "/var/log",
   "log_level": "DEBUG",
